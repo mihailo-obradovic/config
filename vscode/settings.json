@@ -1,0 +1,91 @@
+{
+    // Workbench
+    "breadcrumbs.enabled": false,
+    "explorer.compactFolders": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.menuBarVisibility": "toggle",
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.maxComputationTime": 0,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
+    "editor.fontFamily": "'Iosevka Nerd Font Mono', 'monospace', 'monospace', 'Dubai'",
+    "editor.fontSize": 16,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.wordWrap": "on",
+    "terminal.integrated.fontFamily": "'UbuntuMono Nerd Font Mono'",
+    "terminal.integrated.fontSize": 13,
+    "workbench.colorCustomizations": {
+      "editor.background": "#181d28",
+      "editorRuler.foreground": "#222e38"
+    },
+    "workbench.colorTheme": "Dracula Refined",
+    "workbench.editor.focusRecentEditorAfterClose": false,
+    "workbench.iconTheme": "a-file-icon-vscode",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "newUntitledFile",
+  
+    // Linting and formatting
+    "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[scss]": { "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter" },
+    "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[vue]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+    "[yaml]": {
+      "editor.insertSpaces": true,
+      "editor.tabSize": 2,
+      "editor.autoIndent": "keep",
+      "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+      }
+    },
+    "eslint.validate": [
+      "html",
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+      "vue"
+    ],
+    "files.insertFinalNewline": true,
+    "html.format.wrapAttributes": "force-expand-multiline",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "prettier.arrowParens": "avoid",
+    "prettier.htmlWhitespaceSensitivity": "ignore",
+    "prettier.trailingComma": "none",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+  
+    // Git/GitLens/GitHub Copilot
+    "git.enableSmartCommit": true,
+    "git.mergeEditor": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.enable": {
+      "*": true,
+      "plaintext": false,
+      "markdown": "true",
+      "css": true,
+      "vue": true,
+      "yaml": true
+    },
+    "githubPullRequests.pullBranch": "never",
+    "gitlens.codeLens.scopes": ["containers", "document"],
+  
+    // PHP/Laravel/Inertia
+    "blade.format.enable": true,
+    "bladeFormatter.format.wrapAttributesMinAttrs": 3,
+    "inertia.pages": "resources/js/**/*.vue",
+    "intelephense.diagnostics.undefinedMethods": false
+  }
+  
