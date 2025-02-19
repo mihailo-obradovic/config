@@ -1,0 +1,53 @@
+# Visual customization
+theme = Dracula
+font-family = UbuntuMono Nerd Font Mono
+font-size = 15
+
+# Split/tab view controls
+keybind = ctrl+shift+down=new_split:down
+keybind = ctrl+shift+right=new_split:right
+
+keybind = alt+up=goto_split:up
+keybind = alt+down=goto_split:down
+keybind = alt+right=goto_split:right
+keybind = alt+left=goto_split:left
+
+keybind = alt+z=toggle_tab_overview
+keybind = alt+x=toggle_split_zoom
+keybind = alt+c=close_surface
+
+# Resizing controls; movements equal exactly one row/column
+keybind = ctrl+alt+up=resize_split:up,21
+keybind = ctrl+alt+down=resize_split:down,21
+keybind = ctrl+alt+left=resize_split:left,11
+keybind = ctrl+alt+right=resize_split:right,11
+keybind = ctrl+alt+0=equalize_splits
+
+# Unbind unused/unwanted default keybinds
+keybind = ctrl+page_down=unbind
+keybind = ctrl+page_up=unbind
+keybind = ctrl+insert=unbind
+keybind = super+ctrl+left_bracket=unbind
+keybind = super+ctrl+right_bracket=unbind
+keybind = super+ctrl+shift+up=unbind
+keybind = super+ctrl+shift+down=unbind
+keybind = super+ctrl+shift+right=unbind
+keybind = super+ctrl+shift+left=unbind
+keybind = ctrl+shift+up=unbind
+keybind = ctrl+shift+left=unbind
+keybind = ctrl+shift+e=unbind
+keybind = ctrl+shift+o=unbind
+keybind = super+ctrl+shift+equal=unbind
+keybind = ctrl+equal=unbind
+keybind = ctrl+shift+q=unbind
+keybind = ctrl+shift+enter=unbind
+keybind = ctrl+enter=unbind
+keybind = alt+f4=unbind
+keybind = shift+insert=unbind
+
+# Misc.
+window-width = 80
+window-height = 24
+window-decoration = none
+focus-follows-mouse = true
+working-directory = /home/mihailo/Projects
