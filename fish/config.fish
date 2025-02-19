@@ -14,3 +14,5 @@ alias ni 'npx nuxi module add'
 alias update-grub 'sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias dock 'sudo docker'
 alias lazydock 'sudo lazydocker'
+
+pyenv init - fish | source
