@@ -1,6 +1,7 @@
 # Visual customization
 theme = Dracula
-font-family = UbuntuMono Nerd Font Mono
+# Set to preferred font
+#font-family = UbuntuMono Nerd Font Mono
 font-size = 15
 
 # Split/tab view controls
