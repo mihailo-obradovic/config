@@ -1,15 +1,20 @@
 {
   // Workbench
+  "breadcrumbs.enabled": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "security.workspace.trust.untrustedFiles": "open",
+  "window.commandCenter": false,
   "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "native",
+  "window.zoomLevel": 1,
   "workbench.colorCustomizations": {
     "editor.background": "#181d28",
     "editorRuler.foreground": "#222e38"
   },
   "workbench.colorTheme": "Dracula Refined",
   "workbench.iconTheme": "a-file-icon-vscode",
+  "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
   "diffEditor.ignoreTrimWhitespace": false,
@@ -46,6 +51,9 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[scss]": {
+    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+  },
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -77,6 +85,7 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
 
   // Git/GitLens/GitHub Copilot
+  "git.blame.statusBarItem.enabled": false,
   "git.enableSmartCommit": true,
   "git.mergeEditor": false,
   "github.copilot.enable": {
@@ -85,7 +94,8 @@
     "markdown": false,
     "plaintext": false,
     "vue": true,
-    "yaml": true
+    "yaml": true,
+    "xml": true
   },
   "githubPullRequests.pullBranch": "never",
   "gitlens.codeLens.scopes": ["containers", "document"],
@@ -97,18 +107,7 @@
   "intelephense.diagnostics.undefinedMethods": false,
   "latex-workshop.view.pdf.viewer": "tab",
 
-  // Need to check if needed
-  // "[html]": {
-  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
-  // },
-  // "window.customTitleBarVisibility": "auto",
-  // "window.commandCenter": false,
-  // "workbench.layoutControl.enabled": false,
-  // "eslint.codeActionsOnSave.rules": null,
-  // "scss.lint.duplicateProperties": "warning",
-
-  // No longer used; remove soon unless a need arises
-  "yaml.schemas": {
-    "file:///home/mihailo/.vscode/extensions/atlassian.atlascode-3.4.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  }
+  // Other extension settings
+  "i18n-ally.defaultNamespace": "i18n/locales",
+  "i18n-ally.dirStructure": "dir"
 }
