@@ -1,22 +1,6 @@
 {
   // Workbench
   "breadcrumbs.enabled": false,
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "window.commandCenter": false,
-  "window.menuBarVisibility": "toggle",
-  "window.titleBarStyle": "native",
-  "window.zoomLevel": 1,
-  "workbench.colorCustomizations": {
-    "editor.background": "#181d28",
-    "editorRuler.foreground": "#222e38"
-  },
-  "workbench.colorTheme": "Dracula Refined",
-  "workbench.iconTheme": "a-file-icon-vscode",
-  "workbench.layoutControl.enabled": false,
-  "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "newUntitledFile",
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.maxComputationTime": 0,
   "editor.bracketPairColorization.enabled": true,
@@ -30,43 +14,33 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": false,
   "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": true,
   "editor.minimap.renderCharacters": false,
   "editor.multiCursorModifier": "ctrlCmd",
+  "editor.tabCompletion": "on",
   "editor.unicodeHighlight.nonBasicASCII": false,
   "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.fontFamily": "'UbuntuMono Nerd Font Mono'",
   "terminal.integrated.fontSize": 13,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "native",
+  "window.zoomLevel": 1, // 0 for 1080p, 1 for 1440p, 2 for 2160p screens
+  "workbench.colorCustomizations": {
+    "editor.background": "#181d28",
+    "editorRuler.foreground": "#222e38"
   },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "workbench.colorTheme": "Dracula Refined",
+  "workbench.editorAssociations": {
+    "*.svg": "default"
   },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[yaml]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "keep",
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": true
-    }
-  },
+  "workbench.iconTheme": "a-file-icon-vscode",
+  "workbench.layoutControl.enabled": false,
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "newUntitledFile",
 
   // Linting and formatting
   "eslint.validate": [
@@ -83,31 +57,68 @@
   "prettier.arrowParens": "avoid",
   "prettier.trailingComma": "none",
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  },
 
-  // Git/GitLens/GitHub Copilot
-  "git.blame.statusBarItem.enabled": false,
+  // Git/GitLens
   "git.enableSmartCommit": true,
   "git.mergeEditor": false,
-  "github.copilot.enable": {
-    "*": true,
-    "css": true,
-    "markdown": false,
-    "plaintext": false,
-    "vue": true,
-    "yaml": true,
-    "xml": true
-  },
   "githubPullRequests.pullBranch": "never",
   "gitlens.codeLens.scopes": ["containers", "document"],
+  "git.blame.statusBarItem.enabled": false,
 
-  // PHP/Laravel/Inertia/Latex
+  // i18n/PHP/Laravel/Inertia/Python/LaTeX (disabled by default, enabled for specific workspaces)
   "blade.format.enable": true,
   "bladeFormatter.format.wrapAttributesMinAttrs": 3,
+  "i18n-ally.defaultNamespace": "i18n/locales",
+  "i18n-ally.dirStructure": "dir",
   "inertia.pages": "resources/js/**/*.vue",
   "intelephense.diagnostics.undefinedMethods": false,
   "latex-workshop.view.pdf.viewer": "tab",
 
-  // Other extension settings
-  "i18n-ally.defaultNamespace": "i18n/locales",
-  "i18n-ally.dirStructure": "dir"
+  // GitHub Copilot (VS Code only)
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false
+  },
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true
+  },
+
+  // Cursor AI only
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "cursor.cpp.disabledLanguages": ["plaintext"],
+  "cursor.cpp.enablePartialAccepts": true
 }
