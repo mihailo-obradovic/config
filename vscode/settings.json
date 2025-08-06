@@ -116,6 +116,7 @@
   "chat.instructionsFilesLocations": {
     ".github/instructions": true
   },
+  "github.copilot.nextEditSuggestions.enabled": true,
 
   // Cursor AI only
   "cursor.composer.shouldChimeAfterChatFinishes": true,
