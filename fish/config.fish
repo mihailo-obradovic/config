@@ -49,6 +49,17 @@ alias improve-performance 'set -gx NODE_OPTIONS "--max-old-space-size=4096" && e
 # Uncomment if using pyenv
 # pyenv init - fish | source
 
+# Uncomment if using Kiro
+# string match -q "$TERM_PROGRAM" "kiro" and . (kiro --locate-shell-integration-path fish)
+
 set -g theme_display_date no
 
 set -Ua fish_user_paths (composer global config bin-dir --absolute >/dev/null 2>&1)
+
+# Start GNOME Keyring if we are in a graphical session and it's not already running
+if status is-login && test -z "$SSH_CLIENT" && test -n "$DISPLAY"
+  if not set -q GNOME_KEYRING_PID
+      eval (gnome-keyring-daemon --start --components=secrets)
+      set -Ux SSH_AUTH_SOCK $SSH_AUTH_SOCK
+  end
+end
