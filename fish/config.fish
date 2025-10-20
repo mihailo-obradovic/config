@@ -30,8 +30,17 @@ alias update-grub 'sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias dock 'sudo docker'
 alias lazydock 'sudo lazydocker'
 alias clera 'clear'
+
 function scn
   pnpm dlx shadcn-vue@latest $argv
+end
+
+function doc-md
+  pnpm dlx @mdream/crawl $argv
+end
+
+function glg
+    git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
 end
 
 # node options are set temporarily (will set globally if it works, while max user watches are set permanently in /etc/sysctl.conf)
