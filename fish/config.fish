@@ -34,6 +34,9 @@ function scn
   pnpm dlx shadcn-vue@latest $argv
 end
 
+# node options are set temporarily (will set globally if it works, while max user watches are set permanently in /etc/sysctl.conf)
+alias improve-performance 'set -gx NODE_OPTIONS "--max-old-space-size=4096" && echo fs.inotify.max_user_watches=524288 && echo $NODE_OPTIONS'
+
 # Uncomment if using pyenv
 # pyenv init - fish | source
 
