@@ -1,8 +1,8 @@
 # Visual customization
-theme = Dracula
+# theme = Dracula
 # Set to preferred font
-#font-family = UbuntuMono Nerd Font Mono
-font-size = 15
+font-family = Caskaydia Nerd Font Mono
+font-size = 12
 
 # Split/tab view controls
 keybind = ctrl+shift+down=new_split:down
