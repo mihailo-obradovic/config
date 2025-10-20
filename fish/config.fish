@@ -38,3 +38,5 @@ end
 # pyenv init - fish | source
 
 set -g theme_display_date no
+
+set -Ua fish_user_paths (composer global config bin-dir --absolute >/dev/null 2>&1)
