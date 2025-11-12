@@ -119,5 +119,7 @@
   // Cursor AI only
   "cursor.composer.shouldChimeAfterChatFinishes": true,
   "cursor.cpp.disabledLanguages": ["plaintext"],
-  "cursor.cpp.enablePartialAccepts": true
+  "cursor.cpp.enablePartialAccepts": true,
+  "window.customTitleBarVisibility": "never",
+  "i18n-ally.enabledFrameworks": ["vue", "vue-sfc"]
 }
