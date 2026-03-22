@@ -37,7 +37,6 @@
   },
   "workbench.iconTheme": "a-file-icon-vscode",
   "workbench.layoutControl.enabled": false,
-  "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
 
   // Linting and formatting
@@ -121,5 +120,9 @@
   "cursor.cpp.disabledLanguages": ["plaintext"],
   "cursor.cpp.enablePartialAccepts": true,
   "window.customTitleBarVisibility": "never",
-  "i18n-ally.enabledFrameworks": ["vue", "vue-sfc"]
+  "i18n-ally.enabledFrameworks": ["vue", "vue-sfc"],
+
+  // Claude Code
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.selectedModel": "default"
 }
