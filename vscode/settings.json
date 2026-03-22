@@ -28,18 +28,15 @@
   "window.commandCenter": false,
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "native",
-  "window.zoomLevel": 1, // 0 for 1080p, 1 for 1440p, 2 for 2160p screens
   "workbench.colorCustomizations": {
-    "editor.background": "#181d28",
-    "editorRuler.foreground": "#222e38"
+    "editor.background": "#272E33"
   },
-  "workbench.colorTheme": "Dracula Refined",
+  "workbench.colorTheme": "Everforest Dark",
   "workbench.editorAssociations": {
     "*.svg": "default"
   },
   "workbench.iconTheme": "a-file-icon-vscode",
   "workbench.layoutControl.enabled": false,
-  "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
 
   // Linting and formatting
@@ -121,5 +118,11 @@
   // Cursor AI only
   "cursor.composer.shouldChimeAfterChatFinishes": true,
   "cursor.cpp.disabledLanguages": ["plaintext"],
-  "cursor.cpp.enablePartialAccepts": true
+  "cursor.cpp.enablePartialAccepts": true,
+  "window.customTitleBarVisibility": "never",
+  "i18n-ally.enabledFrameworks": ["vue", "vue-sfc"],
+
+  // Claude Code
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.selectedModel": "default"
 }

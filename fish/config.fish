@@ -1,5 +1,5 @@
 if status is-interactive
-    neofetch
+# Commands to run in interactive sessions (i.e. neofetch) can go here
 end
 
 function fish_greeting
@@ -26,9 +26,6 @@ alias puf 'pnpm uninstall'
 alias px 'pnpm dlx'
 alias ni 'pnpm dlx nuxi module add'
 alias nc 'pnpm dlx nuxi cleanup'
-alias update-grub 'sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias dock 'sudo docker'
-alias lazydock 'sudo lazydocker'
 alias clera 'clear'
 
 function scn
@@ -46,20 +43,37 @@ end
 # node options are set temporarily (will set globally if it works, while max user watches are set permanently in /etc/sysctl.conf)
 alias improve-performance 'set -gx NODE_OPTIONS "--max-old-space-size=4096" && echo fs.inotify.max_user_watches=524288 && echo $NODE_OPTIONS'
 
-# Uncomment if using pyenv
-# pyenv init - fish | source
-
-# Uncomment if using Kiro
-# string match -q "$TERM_PROGRAM" "kiro" and . (kiro --locate-shell-integration-path fish)
+# # Uncomment if using pyenv
+# # pyenv init - fish | source
 
 set -g theme_display_date no
 
-set -Ua fish_user_paths (composer global config bin-dir --absolute >/dev/null 2>&1)
+# set -Ua fish_user_paths (composer global config bin-dir --absolute >/dev/null 2>&1)
 
-# Start GNOME Keyring if we are in a graphical session and it's not already running
-if status is-login && test -z "$SSH_CLIENT" && test -n "$DISPLAY"
-  if not set -q GNOME_KEYRING_PID
-      eval (gnome-keyring-daemon --start --components=secrets)
-      set -Ux SSH_AUTH_SOCK $SSH_AUTH_SOCK
-  end
-end
+# TODO: Fix
+# # Auto-run `nvm use` when .nvmrc exists, with fallback (Fish shell)
+# function nvm_auto_use --on-event chpwd
+#   # Find .nvmrc in current or parent directories (using nvm's built-in helper)
+#   set nvmrc_path (nvm_find_nvmrc)
+ 
+#   if test -n "$nvmrc_path"
+#     # Extract version from .nvmrc
+#     set nvmrc_version (cat "$nvmrc_path")
+ 
+#     # Try to use the .nvmrc version
+#     if nvm use "$nvmrc_version" > /dev/null 2>&1
+#       echo "nvm: Automatically switched to Node.js $nvmrc_version (from .nvmrc)"
+#     else
+#       # Fallback 1: Use global default if set
+#       set default_version (nvm alias default 2>/dev/null | awk '{print $2}')
+#       if test -n "$default_version" && test "$default_version" != "N/A"
+#         nvm use default > /dev/null 2>&1
+#         echo "nvm: .nvmrc version $nvmrc_version not installed. Falling back to global default ($default_version)"
+#       else
+#         # Fallback 2: Use latest installed version
+#         nvm use node > /dev/null 2>&1  # "node" = latest installed
+#         echo "nvm: .nvmrc version $nvmrc_version not installed. Falling back to latest installed version"
+#       end
+#     end
+#   end
+# end
