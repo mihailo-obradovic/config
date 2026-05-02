@@ -35,7 +35,7 @@
   "workbench.editorAssociations": {
     "*.svg": "default"
   },
-  "workbench.iconTheme": "a-file-icon-vscode",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "newUntitledFile",
 
@@ -96,33 +96,20 @@
   "gitlens.codeLens.scopes": ["containers", "document"],
   "git.blame.statusBarItem.enabled": false,
 
+  // i18n
+  "i18n-ally.defaultNamespace": "i18n/locales",
+  "i18n-ally.dirStructure": "dir",
+  "i18n-ally.enabledFrameworks": ["vue", "vue-sfc"],
+
   // i18n/PHP/Laravel/Inertia/Python/LaTeX (disabled by default, enabled for specific workspaces)
   "blade.format.enable": true,
   "bladeFormatter.format.wrapAttributesMinAttrs": 3,
-  "i18n-ally.defaultNamespace": "i18n/locales",
-  "i18n-ally.dirStructure": "dir",
-  "inertia.pages": "resources/js/**/*.vue",
   "intelephense.diagnostics.undefinedMethods": false,
   "latex-workshop.view.pdf.viewer": "tab",
-
-  // GitHub Copilot (VS Code only)
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false
-  },
-  "chat.instructionsFilesLocations": {
-    ".github/instructions": true
-  },
-  "github.copilot.nextEditSuggestions.enabled": true,
 
   // Cursor AI only
   "cursor.composer.shouldChimeAfterChatFinishes": true,
   "cursor.cpp.disabledLanguages": ["plaintext"],
   "cursor.cpp.enablePartialAccepts": true,
-  "window.customTitleBarVisibility": "never",
-  "i18n-ally.enabledFrameworks": ["vue", "vue-sfc"],
-
-  // Claude Code
-  "claudeCode.preferredLocation": "panel",
-  "claudeCode.selectedModel": "default"
+  "claudeCode.preferredLocation": "panel"
 }
